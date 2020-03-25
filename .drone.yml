@@ -6,7 +6,4 @@ steps:
 - name: test
   image: haskell
   commands:
-  - cabal install --only-dependencies --enable-tests
-  - cabal configure --enable-tests
-  - cabal build
-  - cabal test
+  - stack test
