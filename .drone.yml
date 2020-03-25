@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: test
-  image: haskell
+  image: haskell:8.6.5
   commands:
-  - stack setup
+#  - stack setup
   - stack test
