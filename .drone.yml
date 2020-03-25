@@ -4,6 +4,6 @@ name: default
 
 steps:
 - name: test
-  image: haskell
+  image: haskell:8.0.2
   commands:
   - stack test
