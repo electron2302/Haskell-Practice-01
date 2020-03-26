@@ -20,5 +20,4 @@ spec = do
     it "calculates the ggT of 20 and 30" $
       ggT 20 30 `shouldBe` 10
     it "calculates the ggT of arbitrary integers" $
-      property $ \a b -> (a > 0 && b > 0) ==> ggT a b == gcd a b 
-      -- for some reason gcd gets difrent numbers for negative start values like gcd(5,-22)=1 aber euklid(5,-22)=-1
+      property $ \a b -> ggT a b == gcd a b

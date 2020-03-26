@@ -16,7 +16,4 @@ square n = n * n
 
 -- | Calculate the ggt of two ints
 ggT :: Integer -> Integer -> Integer
-ggT a b = 
-    if b == 0
-        then a 
-        else ggT b (a `mod` b)
+ggT a b = abs (if a == 0 then b else ggT (b `mod` a) a)
